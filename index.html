@@ -45,7 +45,8 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .feature h2{font-size:clamp(28px,3.6vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:600;margin:16px 0 14px}
 .feature p{color:var(--dim);margin:0 0 28px;max-width:46ch}
 .gif{aspect-ratio:16/10;border-radius:16px;border:1px solid var(--line);background:var(--panel);overflow:hidden}
-.gif img{display:block;width:100%;height:100%;object-fit:cover}
+.gif:not(.ph){aspect-ratio:auto}
+.gif img{display:block;width:100%;height:auto}
 /* placeholder until the real GIFs land */
 .gif.ph{display:grid;place-items:center;color:var(--faint);font:500 12px/1 'Geist Mono',monospace;letter-spacing:.08em;text-transform:uppercase;
   background:repeating-linear-gradient(135deg,var(--panel) 0 14px,var(--line2) 14px 28px)}
@@ -101,7 +102,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center}
         <p>Compare robots built for your line, find grants you qualify for, and line up financing, all in one place.</p>
         <button class="btn" data-cta>Find your robot</button>
       </div>
-      <div class="gif ph" role="img" aria-label="Placeholder: discovery demo"><span>GIF coming soon</span></div>
+      <div class="gif"><img src="media/pillar-1.gif" alt="Robot discovery demo"></div>
     </div>
   </section>
 
@@ -113,7 +114,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center}
         <p>Step-by-step guides get every robot installed right. When something goes wrong, our knowledge graph points you to the fix.</p>
         <button class="btn" data-cta>See how setup works</button>
       </div>
-      <div class="gif ph" role="img" aria-label="Placeholder: installation and troubleshooting demo"><span>GIF coming soon</span></div>
+      <div class="gif"><img src="media/pillar-2.gif" alt="Installation and troubleshooting demo"></div>
     </div>
   </section>
 
